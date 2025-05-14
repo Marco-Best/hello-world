@@ -1,4 +1,1 @@
-rosrun image_view image_view image:=/camera1/image1/theora
-[ INFO] [1746451262.528988702]: Initializing nodelet with 2 worker threads.
-[ INFO] [1746451262.734416137]: Using transport "raw"
-[ WARN] [1746451262.738424176]: [image_transport] It looks like you are trying to subscribe directly to a transport-specific image topic '/camera1/image1/theora', in which case you will likely get a connection error. Try subscribing to the base topic '/camera1/image1' instead with parameter ~image_transport set to 'theora' (on the command line, _image_transport:=theora). See http://ros.org/wiki/image_transport for details.
+[ERROR] [1747210987.582409349]: Lookup would require extrapolation 0.000151634s into the future.  Requested time 1747210984.548696518 but the latest data is at time 1747210984.548544884, when looking up transform from frame [mag_field] to frame [mns]
