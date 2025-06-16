@@ -1,1 +1,6 @@
-[ERROR] [1747210987.582409349]: Lookup would require extrapolation 0.000151634s into the future.  Requested time 1747210984.548696518 but the latest data is at time 1747210984.548544884, when looking up transform from frame [mag_field] to frame [mns]
+qdisc noqueue 0: dev lo root refcnt 2 
+qdisc tbf 1: dev enp1s0 root refcnt 5 rate 10Gbit burst 3750b lat 29us 
+qdisc netem 10: dev enp1s0 parent 1:1 limit 1000
+qdisc tbf 1: dev enp2s0 root refcnt 5 rate 10Gbit burst 3750b lat 29us 
+qdisc netem 10: dev enp2s0 parent 1:1 limit 1000
+qdisc fq_codel 0: dev enx00133bc25b38 root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64
